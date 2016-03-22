@@ -1,0 +1,104 @@
+body{
+	font: 14px;
+}
+ul{
+	list-style: none;
+}
+li{
+	float: left;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+tbody{
+	width: 300px;
+	color: #f00;
+	margin: 30px;
+}
+
+table thead tr.th{
+	background-color: black;
+	color: #fff;
+}
+table tr td:first-child{
+	width: 20%;
+}
+table tr td:nth-child(2){
+	width: 50%;
+}
+table tr:nth-child(odd){
+	background-color: #fff;
+}
+table tr:nth-child(even){
+	background-color: #ccc;
+}
+table tr:nth-child(n+4){
+	color: black;
+}
+input{
+	margin-top: 40px;
+	width: 100px;
+	-moz-transition: width 1s;
+	-webkit-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+}
+input:focus{
+	width: 300px;
+}
+section{
+	position: relative;
+	width: 300px;
+	overflow: hidden;
+	height: 300px;
+	margin-top: 30px;
+}
+section li{
+	width: 300px;
+	color: #fff;
+	font: 20px bold;
+	height: 300px;
+	float: left;
+	position: absolute;
+}
+section li:first-child{
+	background: black;
+}
+section li:nth-child(2){
+	background: red;
+}
+section li:last-child{
+	background: blue;
+}
+section li:target{
+	z-index: 2;
+	-moz-animation: scroll 1s linear;
+	-webkit-animation: scroll 1s linear;
+	-o-animation: scroll 1s linear;
+	animation:	scroll 1s linear;
+}
+@keyframes scroll{
+	0%{
+		left: -100%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+section div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+}
+section div a{
+	margin-left: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	background: #fff;
+	color: black;
+}

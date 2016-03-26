@@ -51,8 +51,7 @@ section {
 
 
 .section3 {
-	position: absolute;
-	top: 340px;
+	position: relative;
 	width: 300px;
 	height: 150px;
 	overflow: hidden;
@@ -61,7 +60,7 @@ section {
 
 .section3 ul {
 	display: flex;
-	position: absolute;
+	position: relative;
 	left: 160px;
 	top: 120px;
 	list-style: none;
@@ -74,6 +73,7 @@ section {
 }
 .section3 .hide {
 	position: absolute;
+	top:0;
 	width: 300px;
 	height: 150px;
 	z-index: -1;
@@ -97,9 +97,12 @@ section {
 }
 
 .section3>div {
+	position: absolute;
+	top: 0;
 	width: 300%;
 	height: 150px;
 	display: flex;
+
 }
 
 .section3>div>div {

@@ -1,0 +1,44 @@
+html {
+	box-sizing: border-box;
+}
+
+*,*:before,*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+section {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.section1 thead {
+	background-color: black;
+	color: white;
+}
+
+.section1 tbody tr:nth-child(2n) {
+	background-color: gray;
+	color: black;
+}
+
+.section1 tbody tr:nth-child(1), .section1 tbody tr:nth-child(2), .section1 tbody tr:nth-child(3) {
+	color: red;
+}
+
+.section2 {
+	margin: 30px auto;
+}
+
+.section2 input {
+	width: 100px;
+}
+.section2 input:focus {
+	transition: 2s width;
+	width: 200px;
+}

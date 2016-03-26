@@ -68,5 +68,11 @@ section {
 	line-height: 30px;
 	text-align: center;
 	margin-left: 3px;
+	z-index: 3;
+}
 
+section div {
+	position: absolute;
+	width: 300px;
+	height: 150px;
 }
